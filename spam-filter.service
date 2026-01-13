@@ -1,0 +1,18 @@
+[Unit]
+Description=Spam Filter Flask Application
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/path/to/unides_spam_filter
+Environment="PATH=/path/to/unides_spam_filter/.venv/bin"
+ExecStart=/path/to/unides_spam_filter/.venv/bin/python /path/to/unides_spam_filter/app.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/path/to/unides_spam_filter/spam_filter.log
+StandardError=append:/path/to/unides_spam_filter/spam_filter_error.log
+
+[Install]
+WantedBy=multi-user.target
+
