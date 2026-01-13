@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/filter/__init__.py
+src/filter/cli.py
+src/filter/config.py
+src/filter/lexicon.py
+src/filter/model.py
+src/filter/moderator.py
+src/filter/normalizer.py
+src/filter/rules.py
+src/spam_filter.egg-info/PKG-INFO
+src/spam_filter.egg-info/SOURCES.txt
+src/spam_filter.egg-info/dependency_links.txt
+src/spam_filter.egg-info/requires.txt
+src/spam_filter.egg-info/top_level.txt
+tests/test_moderator.py

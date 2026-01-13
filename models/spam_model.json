@@ -1,0 +1,12 @@
+{
+  "bias": -1.4,
+  "features": {
+    "spam_keyword_hits": 0.8,
+    "url_count": 0.65,
+    "uppercase_ratio": 0.55,
+    "long_repeat_ratio": 0.9,
+    "unique_word_ratio": -0.4,
+    "token_count": 0.05
+  }
+}
+

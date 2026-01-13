@@ -1,0 +1,11 @@
+{
+  "bias": -1.1,
+  "features": {
+    "politics_keyword_hits": 1.2,
+    "token_count": 0.03,
+    "sentence_count": 0.2,
+    "question_mark_count": 0.15,
+    "url_count": 0.1
+  }
+}
+

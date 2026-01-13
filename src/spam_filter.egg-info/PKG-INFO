@@ -1,3 +1,11 @@
+Metadata-Version: 2.4
+Name: spam-filter
+Version: 0.1.0
+Summary: Rule-assisted spam and policy moderation engine for forum content.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: flask>=3.0.0
+
 # Spam Filter Engine
 
 Forum gönderileri için argo/uygunsuz içerik taraması yapan, spam ve siyasi içerikleri yöneten katmanlı bir moderasyon modülü. Tüm işlem yerelde gerçekleşir; herhangi bir harici API gerektirmez.
@@ -18,16 +26,15 @@ pip install pytest
 ```
 
 ## Kullanım
-
 ```python
-from src.filter import ContentModerator
+from filter.moderator import ContentModerator
 
 moderator = ContentModerator.load_default()
 result = moderator.moderate("bedava para kazanmak için şu linke tıkla")
 
-print(result.status)  # ModerationStatus.ADMIN_REVIEW_SPAM
-print(result.reason)  # "spam_rule_trigger"
-print(result.scores)  # {'spam_rule': 0.62, 'spam_model': 0.71, ...}
+print(result.status)   # ModerationStatus.ADMIN_REVIEW_SPAM
+print(result.reason)   # "spam_rule_trigger"
+print(result.scores)   # {'spam_rule': 0.62, 'spam_model': 0.71, ...}
 ```
 
 CLI örneği:

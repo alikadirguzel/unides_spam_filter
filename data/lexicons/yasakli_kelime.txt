@@ -1,0 +1,109 @@
+# ALCOHOL
+alkol
+içki
+içki içmek
+alkollü
+alkolik
+bira
+şarap
+viski
+vodka
+tekila
+rom
+cin
+rakı
+şampanya
+likör
+kokteyl
+shot
+sarhoş
+sarhoşluk
+kafayı bulmak
+sızmak
+çakırkeyif
+pub
+meyhane
+tekel
+
+# DRUGS
+uyuşturucu
+uyuşturmak
+madde
+madde kullanımı
+esrar
+ot
+kenevir
+haşhaş
+eroin
+kokain
+crack
+met
+bonzai
+sentetik
+spice
+lsd
+ecstasy
+ekstazi
+mdma
+hap
+uyuşturucu hap
+torbacı
+torba
+çekmek
+kafası güzel
+overdose
+doz aşımı
+
+# SMOKING
+sigara
+tütün
+nikotin
+içmek
+sigara içmek
+paket
+dal
+duman
+nargile
+puro
+pipo
+elektronik sigara
+vape
+pod
+sarılmış sigara
+tütün sarmak
+
+# SEXUALITY
+cinsellik
+cinsel
+seks
+sevişmek
+yatak
+yatakta
+birlikte olmak
+çıplak
+çıplaklık
+erotik
+porno
+pornografi
+fantezi
+şehvet
+azmak
+tahrik
+orgazm
+mastürbasyon
+escort
+fuhuş
+
+# SLANG_RELATED
+kafayapmak
+kafabulmak
+uçmak
+trip
+tribegirmek
+takılmak
+takılma
+gece hayatı
+bar
+club
+gecekulübü
+afterparty
