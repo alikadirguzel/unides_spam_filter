@@ -192,8 +192,6 @@ cibiliyetsiz
 cibilliyetini
 cibilliyetsiz
 cif
-cikar
-cim
 çük
 dalaksız
 dallama
