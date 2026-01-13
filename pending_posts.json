@@ -160,5 +160,32 @@
     "notes": "fsaa",
     "status": "pending",
     "created_at": "2026-01-13T12:18:27Z"
+  },
+  {
+    "id": 19,
+    "title": "Amk",
+    "body": "Salaklar siz davarsınız mallar",
+    "category": "Siyaset",
+    "notes": "",
+    "status": "pending",
+    "created_at": "2026-01-13T12:45:28Z"
+  },
+  {
+    "id": 20,
+    "title": "Kaçırılmayacak Fırsat",
+    "body": "🔥🔥 HAYATINI DEĞİŞTİRECEK ETKİNLİK 🔥🔥\r\n\r\n📢 SADECE BUGÜN!\r\n📢 SINIRLI KONTENJAN!\r\n📢 HERKES KATILABİLİR!!!\r\n\r\n💥 ÜCRETSİZ SERTİFİKA\r\n💥 SÜRPRİZ HEDİYELER\r\n💥 ÖZEL ÇEKİLİŞ\r\n💥 KATILIM ZORUNLU 😱\r\n\r\n📍 Yer: HER YER\r\n🕒 Saat: KAÇIRMAYIN\r\n📆 Tarih: HEMEN ŞİMDİ\r\n\r\n👉 KATILMAK İÇİN:\r\n\r\nBu mesajı 3 kişiye gönder\r\n\r\nGruba zorunlu olarak katıl\r\n\r\n“KATILIYORUM” yaz ✍️\r\n\r\n❗❗ SONRA “HABERİM YOKTU” DEMEYİN ❗❗\r\n🚀 GELECEĞİNİZ İÇİN BU ŞANSI KAÇIRMAYIN 🚀",
+    "category": "Çekiliş",
+    "notes": "",
+    "status": "pending",
+    "created_at": "2026-01-13T12:48:06Z"
+  },
+  {
+    "id": 21,
+    "title": "Pub da alkollü eğlence",
+    "body": "Müziğin, eğlencenin ve sohbetin bir araya geldiği Alkollü Eğlence Gecesi’ne davetlisiniz!\r\n\r\n DJ performansı Çeşit çeşit alkollü içecekler\r\nKokteyl & shot ikramları\r\n Dans, eğlence, bol kahkaha",
+    "category": "Alkol",
+    "notes": "",
+    "status": "pending",
+    "created_at": "2026-01-13T13:01:22Z"
   }
 ]
