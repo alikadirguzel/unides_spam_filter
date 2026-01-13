@@ -1,0 +1,17 @@
+# Spam Filter Project Requirements
+# Python >= 3.10 required
+
+# Web framework and dependencies
+Flask>=3.0.0
+Werkzeug>=3.0.0
+Jinja2>=3.1.0
+itsdangerous>=2.1.0
+click>=8.1.0
+blinker>=1.6.0
+
+# HTML escaping and markup utilities
+MarkupSafe>=2.1.0
+
+# Testing framework
+pytest>=7.4.0
+
