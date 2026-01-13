@@ -14,7 +14,6 @@ Abaza
 Abdal
 Abuk
 Aciz
-Aç
 Açgözlü
 Adi
 Afallamış
@@ -67,26 +66,20 @@ Cazgır
 Ceberrut
 Cenabet
 Cıbıl
-Cılız
 Cırtlak
 Cıvık
 Cibiliyetsiz
-Cimri
 Çakal
 Çakma
 Çam yarması
-Çamur
 Çapulcu
 Çapsız
-Çarık
 Çarpık
 Çatlak
 Çirkef
 Çirkin
 Çiyan
 Çomar
-Çöp
-Çürük
 Dalkavuk
 Dallama
 Dalyarak
@@ -114,15 +107,11 @@ Donsuz
 Dönek
 Döküntü
 Dudak büken
-Düdük
 Dümenci
-Düşük
 Düşük çeneli
 Düzenbaz
 Ebleh
 Egoist
-Ekşi
-Eliaçık
 Embesil
 Enayi
 Engerek
@@ -148,7 +137,6 @@ Gavat
 Gevşek
 Geveze
 Geçimsiz
-Geri
 Gerizekalı
 Gerzek
 Gıcık
@@ -161,7 +149,6 @@ Ham halat
 Hantal
 Haysiyetsiz
 Hayta
-Hayvan
 Hırt
 Hıyar
 Hıyar ağası
@@ -174,13 +161,11 @@ Hödük
 Höllük
 Hulog
 Hurdacı
-Huzursuz
 İblis
 İbne
 İçten pazarlıklı
 İğrenç
 İki yüzlü
-İlkel
 İmanız
 İmbedil
 İnatçı
@@ -216,7 +201,6 @@ Karaktersiz
 Karın ağrısı
 Kaşar
 Katır
-Katil
 Kavruk
 Kavşak
 Kaypak
@@ -238,17 +222,13 @@ Kof
 Kokona
 Kokmuş
 Korkak
-Koyun
-Kozalak
 Köçek
 Köftehor
 Köle
-Köpek
 Kösnük
 Kötürüm
-Köstebek
+Köpek
 Kubur
-Kukla
 Kurnaz
 Kuş beyinli
 Külüstür
@@ -256,11 +236,9 @@ Kütük
 Laf ebesi
 Laka
 Lakayıt
-Lale
 Lastik
 Lavuk
 Leş
-Leylek
 Lop
 Lümpen
 Mahluk
@@ -272,7 +250,6 @@ Maraba
 Maskara
 Matrak
 Maymun
-Mecnun
 Mendebur
 Menfaatçi
 Meraklı
@@ -301,7 +278,6 @@ Odun
 Oğlan
 Omurgasız
 Orta malı
-Ot
 Otlakçı
 Otsu
 Oynak
@@ -343,7 +319,6 @@ Sabun köpüğü
 Saçma
 Saf
 Safdil
-Sakal
 Sakaoğlanı
 Sakat
 Salak
@@ -367,7 +342,6 @@ Sırtlan
 Sinsi
 Sivri
 Sivrizeka
-Soğuk
 Sokak köpeği
 Solucan
 Somburtkan
@@ -376,11 +350,9 @@ Sopalık
 Sosyopat
 Soysuz
 Sömürücü
-Sözde
 Sünepe
 Sürtük
 Süzme
-Şaban
 Şaklaban
 Şapşal
 Şapşik
@@ -395,19 +367,15 @@ Süzme
 Şizofren
 Şopar
 Tabansız
-Taklitçi
 Takoz
 Talak
-Tavuk
 Tembel
 Teneke
-Ters
 Tıknaz
 Tıngır
 Tırto
 Tırt
 Tiki
-Tilki
 Tinerci
 Tinsiz
 Tipitip
@@ -416,7 +384,6 @@ Tokmakçı
 Tombalak
 Top
 Topaç
-Torba
 Tosun
 Toy
 Tufacı
@@ -441,7 +408,6 @@ Varoş
 Vasıfsız
 Vazgeçilmez
 Verem
-Vezir
 Vırvır
 Vızvız
 Vıcık
@@ -459,7 +425,6 @@ Yolunacak kaz
 Yontulmamış
 Yosma
 Yoz
-Yumuşak
 Yüzsüz
 Yavşak
 Yıkık
