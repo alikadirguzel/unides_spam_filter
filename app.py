@@ -16,7 +16,7 @@ src_dir = Path(__file__).parent / "src"
 if str(src_dir) not in sys.path:
     sys.path.insert(0, str(src_dir))
 
-from flask import Flask, redirect, render_template_string, request, url_for
+from flask import Flask, redirect, render_template_string, request, url_for, jsonify
 
 from src.filter import ContentModerator
 
@@ -369,16 +369,64 @@ def admin_review(post_id: int):
     marked_body = highlight_text(item.get("body") or "-", forbidden, other_keywords)
     marked_notes = highlight_text(item.get("notes") or "-", forbidden, other_keywords)
 
-    return render_template_string(
-        ADMIN_REVIEW_TEMPLATE,
-        item=item,
-        result=mod_result,
-        marked_title=marked_title,
-        marked_category=marked_category,
-        marked_body=marked_body,
-        marked_notes=marked_notes,
-        forbidden_words=forbidden,
-    )
+    return jsonify({
+    "item": item,
+    "result": mod_result,
+    "marked_title": marked_title,
+    "marked_category": marked_category,
+    "marked_body": marked_body,
+    "marked_notes": marked_notes,
+    "forbidden_words": forbidden
+})
+
+@app.route("/api/moderate", methods=["POST"])
+def moderate_api():
+    data = request.get_json()
+
+    if not data:
+        return jsonify({"error": "JSON body required"}), 400
+
+    combined = "\n".join([
+        data.get("title", ""),
+        data.get("category", ""),
+        data.get("body", ""),
+        data.get("notes", ""),
+    ])
+
+    mod_result = moderator.moderate(combined)
+    meta = mod_result.metadata or {}
+
+    forbidden = meta.get("forbidden_words", [])
+    spam_kw = meta.get("spam_keywords", [])
+    politics_kw = meta.get("politics_keywords", [])
+
+    response = {
+        "moderation": moderation_result_to_response(mod_result),
+
+        "analysis": {
+            "forbidden": {
+                "count": len(forbidden),
+                "words": forbidden
+            },
+            "spam": {
+                "count": len(spam_kw),
+                "keywords": spam_kw
+            },
+            "politics": {
+                "count": len(politics_kw),
+                "keywords": politics_kw
+            }
+        },
+
+        "highlighted": {
+            "title": str(highlight_text(data.get("title"), forbidden, spam_kw + politics_kw)),
+            "category": str(highlight_text(data.get("category"), forbidden, spam_kw + politics_kw)),
+            "body": str(highlight_text(data.get("body"), forbidden, spam_kw + politics_kw)),
+            "notes": str(highlight_text(data.get("notes"), forbidden, spam_kw + politics_kw)),
+        }
+    }
+
+    return jsonify(response)
 
 
 if __name__ == "__main__":
