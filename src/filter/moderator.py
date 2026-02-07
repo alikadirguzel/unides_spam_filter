@@ -44,8 +44,8 @@ class ContentModerator:
         lexicon_match = self.lexicon.scan_tokens(normalized.tokens)
 
         extra_features = {
-        "spam_keyword_hits": float(len(lexicon_match.spam)),
-        "politics_keyword_hits": float(len(lexicon_match.politics)),
+            "spam_keyword_hits": float(len(lexicon_match.spam)),
+            "politics_keyword_hits": float(len(lexicon_match.politics)),
         }
 
         rule_scores = self.rules.evaluate(normalized, extra_features=extra_features)
@@ -59,25 +59,31 @@ class ContentModerator:
             "politics_model": round(politics_prob, 3),
         }
 
-        reasons = []
-        status = ModerationStatus.ACCEPT
+        reasons: list[str] = []
 
-        # 🔴 Yasaklı kelime
-        if lexicon_match.has_forbidden:
-         reasons.append("yasakli_kelime_kullanimi")
-         status = ModerationStatus.REJECT
+        # Flag'ler
+        forbidden_flag = bool(lexicon_match.has_forbidden)
+        spam_flag = self._should_flag_spam(scores)
+        politics_flag = self._should_flag_politics(scores)
 
-        # 🟠 Spam
-        if self._should_flag_spam(scores):
-         reasons.append("spam_supheli")
-        if status != ModerationStatus.REJECT:
-         status = ModerationStatus.ADMIN_REVIEW_SPAM
+        # Reasons'ları biriktir (REJECT olsa bile)
+        if forbidden_flag:
+            reasons.append("yasakli_kelime_kullanimi")
+        if spam_flag:
+            reasons.append("spam_supheli")
+        if politics_flag:
+            reasons.append("politics_supheli")
 
-        # 🟠 Politics
-        if self._should_flag_politics(scores):
-         reasons.append("politics_supheli")
-        if status != ModerationStatus.REJECT:
-         status = ModerationStatus.ADMIN_REVIEW_POLITICS
+        # Status önceliği (yasaklı kelime en üst)
+        if forbidden_flag:
+            status = ModerationStatus.REJECT
+        elif politics_flag:
+            status = ModerationStatus.ADMIN_REVIEW_POLITICS
+        elif spam_flag:
+            status = ModerationStatus.ADMIN_REVIEW_SPAM
+        else:
+            status = ModerationStatus.ACCEPT
+            reasons = ["temiz"]
 
         return ModerationResult(
             status=status,
@@ -90,6 +96,8 @@ class ContentModerator:
             },
         )
 
+
+
     def _should_flag_spam(self, scores: Dict[str, float]) -> bool:
             thresholds = self.config.thresholds
             return scores["spam_rule"] >= thresholds.spam_rule or scores["spam_model"] >= thresholds.spam_model
@@ -97,7 +105,6 @@ class ContentModerator:
     def _should_flag_politics(self, scores: Dict[str, float]) -> bool:
         thresholds = self.config.thresholds
         return scores["politics_rule"] >= thresholds.politics_rule or scores["politics_model"] >= thresholds.politics_model
-
     @classmethod
     def load_default(cls, config: Optional[FilterConfig] = None) -> "ContentModerator":
         return cls(config or DEFAULT_CONFIG)
