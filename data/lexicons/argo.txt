@@ -1,7 +1,6 @@
 ahmak
 aptal
 çomar
-dalga
 dangalak
 enayi
 gerzek
@@ -12,11 +11,9 @@ yavşak
 gerizekalı
 Abaza
 Abdal
-Abuk
 Aciz
 Açgözlü
 Adi
-Afallamış
 Ahmak
 Akılsız
 Aksırıklı
@@ -45,8 +42,6 @@ Beceriksiz
 Bedbaht
 Beleşçi
 Bencil
-Besleme
-Bet sesli
 Beyinsiz
 Bezirgan
 Bıçkın
@@ -60,14 +55,11 @@ Budala
 Bunak
 Buz kütlesi
 Cahil
-Canavar
-Cansız
 Cazgır
 Ceberrut
 Cenabet
 Cıbıl
 Cırtlak
-Cıvık
 Cibiliyetsiz
 Çakal
 Çakma
@@ -75,22 +67,18 @@ Cibiliyetsiz
 Çapulcu
 Çapsız
 Çarpık
-Çatlak
 Çirkef
-Çirkin
 Çiyan
 Çomar
 Dalkavuk
 Dallama
 Dalyarak
-Dandik
 Dangalak
 Davar
 Dayanıksız
 Dejenere
 Deli
 Demode
-Dengesiz
 Denyo
 Deyyus
 Dış kapının mandalı
@@ -120,12 +108,9 @@ Ezik
 Eşek
 Eşkiya
 Fahişe
-Fasulye
 Felfecir
 Fesat
 Fırıldak
-Fırsatçı
-Fıs
 Fışkı
 Fitne
 Fodul
@@ -160,7 +145,6 @@ Hoppa
 Hödük
 Höllük
 Hulog
-Hurdacı
 İblis
 İbne
 İçten pazarlıklı
@@ -168,27 +152,21 @@ Hurdacı
 İki yüzlü
 İmanız
 İmbedil
-İnatçı
 İnelek
 İnsafsız
 İpne
 İpotekli
 İskelet
 İsraf
-İşbirlikçi
 İşgüzar
 İt
 İtici
 İt kopuk
-Kaba
-Kaba saba
 Kaçık
 Kafir
-Kafatasçı
 Kahpe
 Kaka
 Kalas
-Kalitesiz
 Kalleş
 Kaltak
 Kambur
@@ -210,17 +188,14 @@ Kelek
 Kelepir
 Kenef
 Kepaze
-Kereste
 Keriz
 Kıro
-Kısır
 Kıt
 Kıt akıllı
 Kıvırtkan
 Klavye delikanlısı
 Kof
 Kokona
-Kokmuş
 Korkak
 Köçek
 Köftehor
@@ -236,7 +211,6 @@ Kütük
 Laf ebesi
 Laka
 Lakayıt
-Lastik
 Lavuk
 Leş
 Lop
@@ -251,17 +225,10 @@ Maskara
 Matrak
 Maymun
 Mendebur
-Menfaatçi
-Meraklı
-Mermi
 Mezarcı
 Mızmız
 Mide bulandırıcı
 Mider
-Mikrop
-Minder
-Miskin
-Miyop
 Moloz
 Moron
 Mundar
@@ -269,12 +236,9 @@ Müsvedde
 Müzevir
 Nahoş
 Nankör
-Nemrut
 Nevale
 Nezaketsiz
-Niteliksiz
 Numunelik
-Odun
 Oğlan
 Omurgasız
 Orta malı
@@ -288,7 +252,6 @@ Oynak
 Özentili
 Paçoz
 Palavra
-Palyanço
 Paragöz
 Parazit
 Pasaklı
@@ -314,18 +277,12 @@ Put
 Riyakar
 Ruhsuz
 Rüşvetçi
-Sabun
-Sabun köpüğü
 Saçma
-Saf
 Safdil
 Sakaoğlanı
 Sakat
 Salak
 Salyalı
-Saman
-Sanrı
-Sap
 Sapık
 Sapsız
 Sarsak
@@ -387,8 +344,6 @@ Topaç
 Tosun
 Toy
 Tufacı
-Tuhaf
-Tulumba
 Tuzsuz
 Türedi
 Ucube
@@ -405,7 +360,6 @@ Uyuz
 Vahşi
 Vampir
 Varoş
-Vasıfsız
 Vazgeçilmez
 Verem
 Vırvır
@@ -416,7 +370,6 @@ Yabani
 Yağcı
 Yağlı
 Yalaka
-Yalan
 Yalancı
 Yamyam
 Yandan çarklı
@@ -432,7 +385,6 @@ Yılan
 Yılışık
 Yırtık
 Zaman kaybı
-Zararlı
 Zavallı
 Zevzek
 Zevksiz
@@ -441,7 +393,6 @@ Zırç
 Zırto
 Zırtapoz
 Zibidi
-Zift
 Zina
 Ziyan
 Zombi
